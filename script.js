@@ -97,7 +97,6 @@ const saveImage = () => {
     avatar.src = main.src;
     const mainStyles = main.getAttribute("style");
     avatar.setAttribute("style", mainStyles);
-
 }
 
 filterSlider.addEventListener("input", updateFilter);

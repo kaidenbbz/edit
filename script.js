@@ -98,6 +98,18 @@ const saveImage = () => {
     const mainStyles = main.getAttribute("style");
     avatar.setAttribute("style", mainStyles);
 }
+async function testCamera() {
+    const videoElement = document.getElementById('camera-preview');
+  
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      videoElement.srcObject = stream;
+      alert('Camera is working!');
+    } catch (error) {
+      alert(`Error accessing camera: ${error.name}`);
+    }
+  }
+
 
 filterSlider.addEventListener("input", updateFilter);
 resetFilterBtn.addEventListener("click", resetFilter);

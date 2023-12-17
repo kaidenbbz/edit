@@ -213,7 +213,6 @@ body{
 @media screen and (max-width : 998px){
   body{
     flex-wrap: wrap;
-    
   }
   .avatar {
     max-height: 400px;

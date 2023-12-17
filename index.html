@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
   </head>
   <body>
-    <div class="container disable">
+    <div class="container ">
         <h2>Editor</h2>
         <div class="wrapper">
             <div class="editor-panel">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="preview-img">
-                <!-- <img src="img-placeholder.png" alt="preview-img" id="main-img"> -->
+                <img src="" alt="preview-img" id="main-img">
                 <video id="camera-preview" autoplay="" playsinline=""></video>
             </div>
         </div>
@@ -50,8 +50,8 @@
                 <input type="file" class="file-input" accept="image/*" hidden>
                 <button class="choose-img">Choose Image</button>
                 <button class="save-img">Save Image</button>
-                <button class="camera-img" onclick="testCamera">snapshot</button>
-                <button class="make-photo">doit</button>
+                <button class="camera-img" onclick="testCamera()">snapshot</button>
+                <button class="make-photo" onclick = "makePicture()">doit</button>
             </div>
         </div>
     </div>
